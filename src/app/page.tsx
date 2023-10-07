@@ -1,8 +1,12 @@
 "use client";
 import { useState } from "react";
+import { BarWipeAnimation } from "./components";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
   const [name, setName] = useState("");
+  const [startAnimation, setStartAnimation] = useState(false);
 
   const gridStyles = [
     "auto-rows-[5rem]",
@@ -31,6 +35,11 @@ export default function Home() {
   return (
     // this div sets the grid to be centered
     <div className="flex h-full justify-center items-center">
+      {/* added wipe animation on page itself
+          since React rerenders the page once a state has been changed
+          and runs the whole transition animation again
+      */}
+      <BarWipeAnimation start={startAnimation} />
       {/* this holds the grid styles */}
       <div className={gridStyles}>
         <span className={headerStyles}> Hey, </span>
@@ -44,6 +53,14 @@ export default function Home() {
         <button
           className="font-poppins text-2xl font-bold text-center disabled:opacity-50 transition ease-in-out 1000ms"
           disabled={!name}
+          onClick={() => {
+            setStartAnimation(true);
+            // added delay to finish animation transition to finish
+            // before navgiating to main page
+            setTimeout(() => {
+              router.push("/main");
+            }, 1500);
+          }}
         >
           {" "}
           let's go.{" "}
