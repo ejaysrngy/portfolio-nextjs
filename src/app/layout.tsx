@@ -19,7 +19,10 @@ export default function RootLayout({
             a blocked element
         */}
         <div className="bg-bg-gray absolute min-h-full min-w-full">
-          <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="min-h-screen w-full"
+          >
             <filter id="noiseFilter">
               <feTurbulence
                 type="fractalNoise"
@@ -35,7 +38,7 @@ export default function RootLayout({
             to be rendered on top of 
             the grainy bg
         */}
-        <main className="relative">{children}</main>
+        <main className="relative h-screen w-screen">{children}</main>
       </body>
     </html>
   );

@@ -14,6 +14,8 @@ const config: Config = {
       fontFamily: {
         // add helvetica fonts to be used
         helvetica: ["helvetica", "sans-serif"],
+        // add poppins
+        poppins: ["Poppins", "sans"],
       },
     },
   },
