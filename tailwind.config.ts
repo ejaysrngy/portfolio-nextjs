@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         "bg-gray": "#BBBBBB",
+        "red-accents": "#a50000",
       },
       fontFamily: {
         // add helvetica fonts to be used
