@@ -2,9 +2,29 @@
 import { useState, useEffect } from "react";
 import { BarWipeAnimation } from "../components";
 import { uiSlice } from "../store";
+import NavBar from "./NavBar";
 
 export default function Main() {
   const { visitedMain, setVisitedMain } = uiSlice((state) => state);
+
+  const navLinkArray = [
+    {
+      text: "Home",
+      link: "#home",
+    },
+    {
+      text: "About",
+      link: "#about",
+    },
+    {
+      text: "Projects",
+      link: "#projects",
+    },
+    {
+      text: "Contact",
+      link: "#contact",
+    },
+  ];
 
   useEffect(() => {
     // sets the animation to stop
@@ -17,20 +37,13 @@ export default function Main() {
     return () => clearTimeout(animationStop);
   }, [window.location.pathname]);
 
-  const gridStyles = [
-    "auto-rows-[5rem]",
-    "gap-8",
-    "grid",
-    "items-center",
-    "justify-center",
-  ].join(" ");
-
   return (
     // this div sets the grid to be centered
-    <div className="flex h-full justify-center items-center">
+    <div className="flex h-full flex-col">
       <BarWipeAnimation start={!visitedMain} reverse={true} />
       {/* this holds the grid styles */}
-      <div className={gridStyles}>hatdog</div>
+      <NavBar navLinks={navLinkArray} />
+      <div></div>
     </div>
   );
 }
