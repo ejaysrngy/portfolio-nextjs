@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { BarWipeAnimationReverse } from "../components";
+import { BarWipeAnimation } from "../components";
 
 export default function Main() {
   const [name, setName] = useState("");
@@ -16,11 +16,9 @@ export default function Main() {
   return (
     // this div sets the grid to be centered
     <div className="flex h-full justify-center items-center">
-      <BarWipeAnimationReverse start={true} />
+      <BarWipeAnimation start={true} reverse={true} />
       {/* this holds the grid styles */}
-      <div className={gridStyles}>
-        hatdog
-      </div>
+      <div className={gridStyles}>hatdog</div>
     </div>
   );
 }
