@@ -5,7 +5,7 @@ export default function NavBar(props: {
 }) {
   const { navLinks } = props;
 
-  const [navBg, setNavBg] = useState(true);
+  const [navBg, setNavBg] = useState(false);
 
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
@@ -31,7 +31,7 @@ export default function NavBar(props: {
     >
       {navLinks.map((link, index) => {
         return (
-          <a href={link.link} className="font-poppins text-5xl font-bold">
+          <a key={index} href={link.link} className="font-poppins text-5xl font-bold">
             {link.text.toUpperCase()}
           </a>
         );
