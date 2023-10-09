@@ -1,30 +1,14 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { BarWipeAnimation } from "../components";
 import { uiSlice } from "../store";
 import NavBar from "./NavBar";
+import HeroSection from "./Hero";
+
+import { NAV_LINKS } from "../constants/const";
 
 export default function Main() {
   const { visitedMain, setVisitedMain } = uiSlice((state) => state);
-
-  const navLinkArray = [
-    {
-      text: "Home",
-      link: "#home",
-    },
-    {
-      text: "About",
-      link: "#about",
-    },
-    {
-      text: "Projects",
-      link: "#projects",
-    },
-    {
-      text: "Contact",
-      link: "#contact",
-    },
-  ];
 
   useEffect(() => {
     // sets the animation to stop
@@ -42,8 +26,10 @@ export default function Main() {
     <div className="flex h-full flex-col">
       <BarWipeAnimation start={!visitedMain} reverse={true} />
       {/* this holds the grid styles */}
-      <NavBar navLinks={navLinkArray} />
-      <div></div>
+      <NavBar navLinks={NAV_LINKS} />
+      <div className="flex flex-col pt-3">
+        <HeroSection />
+      </div>
     </div>
   );
 }
