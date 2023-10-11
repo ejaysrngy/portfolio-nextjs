@@ -1,9 +1,11 @@
 "use client";
+import About from "./About";
+import HeroSection from "./Hero";
+import NavBar from "./NavBar";
+
 import { useEffect } from "react";
 import { BarWipeAnimation } from "../components";
 import { uiSlice } from "../store";
-import NavBar from "./NavBar";
-import HeroSection from "./Hero";
 
 import { NAV_LINKS } from "../constants/const";
 
@@ -27,8 +29,15 @@ export default function Main() {
       <BarWipeAnimation start={!visitedMain} reverse={true} />
       {/* this holds the grid styles */}
       <NavBar navLinks={NAV_LINKS} />
-      <div className="flex flex-col pt-3">
+      <div className="flex flex-col pt-3 justify-evenly z-50">
         <HeroSection />
+        <About/>
+        <About/>
+        <About/>
+        <About/>
+        <About/>
+        <About/>
+
       </div>
     </div>
   );

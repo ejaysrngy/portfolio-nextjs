@@ -10,7 +10,7 @@ export default function NavBar(props: {
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
 
-    if (currentScrollPos >= 100) {
+    if (currentScrollPos >= 50) {
       setNavBg(true);
     } else {
       setNavBg(false);
@@ -25,7 +25,7 @@ export default function NavBar(props: {
 
   return (
     <div
-      className={`flex justify-between sticky top-0 transition-all duration-200 ease-in-out ${
+      className={`flex justify-between sticky top-0 transition-all duration-100 ease-in-out z-40 ${
         navBg ? `bg-red-accents` : "bg-transparent"
       }`}
     >
