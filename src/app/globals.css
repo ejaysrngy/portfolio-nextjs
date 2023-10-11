@@ -6,10 +6,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
-  scroll-behavior: smooth;
   height: 100%;
 }
 
@@ -54,5 +54,18 @@ body {
 @layer components {
   .bar-styles {
     @apply h-[20%] w-full bg-black
+  }
+
+  .vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+
+  .clipped-text {
+    mix-blend-mode: multiply;
+    /* background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; */
   }
 }

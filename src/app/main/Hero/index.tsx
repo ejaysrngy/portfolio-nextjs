@@ -18,16 +18,16 @@ export default function HeroSection() {
 
   return (
     <div className="relative w-full">
-      <span className={heroHeaderStyles}>EJAY SARANGAY</span>
+      <div className={heroHeaderStyles}>EJAY SARANGAY</div>
       <div className="px-10 pt-1 flex flex-col font-poppins italic text-3xl font-light">
-        <span>
+        <div>
           {" "}
           // junior fullstack developer{" "}
-        </span>
-        <span>
+        </div>
+        <div>
           {" "}
           // licensed physiotherapist{" "}
-        </span>
+        </div>
       </div>
       <div className="absolute w-fit flex gap-10 overflow-hidden xl:bottom-[10em] xl:left-[45em] 2xl:left-[60em] 2xl:bottom-[15em]">
         <Image src={waveAccents} height="175" alt="waves" />

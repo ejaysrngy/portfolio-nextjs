@@ -25,7 +25,7 @@ export default function NavBar(props: {
 
   return (
     <div
-      className={`flex justify-between sticky top-0 transition-all duration-100 ease-in-out z-40 ${
+      className={`flex justify-between sticky top-0 transition-all duration-100 ease-in-out z-50 ${
         navBg ? `bg-red-accents` : "bg-transparent"
       }`}
     >
