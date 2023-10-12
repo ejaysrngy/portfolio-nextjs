@@ -61,11 +61,8 @@ body {
     text-orientation: upright;
   }
 
-  .clipped-text {
-    mix-blend-mode: multiply;
-    /* background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent; */
+  .logo-section img {
+    aspect-ratio: 3/2;
+    object-fit: contain;
   }
 }

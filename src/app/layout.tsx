@@ -18,7 +18,7 @@ export default function RootLayout({
             set to absolute cause this is technically
             a blocked element
         */}
-        <div className="fixed bg-bg-gray min-h-full min-w-full">
+        <div className="fixed bg-bg-gray min-h-full min-w-full z-[-1]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="min-h-screen w-full"
