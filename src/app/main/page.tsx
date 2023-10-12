@@ -29,7 +29,7 @@ export default function Main() {
       <BarWipeAnimation start={!visitedMain} reverse={true} />
       {/* this holds the grid styles */}
       <NavBar navLinks={NAV_LINKS} />
-      <div className="flex flex-col pt-3 justify-evenly z-40 gap-48">
+      <div className="flex flex-col pt-14 justify-evenly z-40 gap-48">
         <HeroSection />
         <About/>
       </div>

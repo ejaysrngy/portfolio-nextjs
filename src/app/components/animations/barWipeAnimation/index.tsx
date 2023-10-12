@@ -44,7 +44,7 @@ export default function BarWipeAnimation(props: {
 
   return (
     <div
-      className={`absolute h-full overflow-hidden top-0 left-0 right-0 bottom-0 pointer-events-none z-10 ${
+      className={`absolute h-full overflow-hidden top-0 left-0 right-0 bottom-0 pointer-events-none z-50 ${
         start ? "visible" : "hidden"
       }`}
       ref={scope}

@@ -17,7 +17,7 @@ export default function HeroSection() {
   ].join(" ");
 
   return (
-    <div className="relative w-full">
+    <div id="home" className="relative w-full">
       <div className={heroHeaderStyles}>EJAY SARANGAY</div>
       <div className="px-10 pt-1 flex flex-col font-poppins italic text-3xl font-light">
         <div>
