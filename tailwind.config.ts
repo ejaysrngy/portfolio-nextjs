@@ -17,6 +17,8 @@ const config: Config = {
         helvetica: ["helvetica", "sans-serif"],
         // add poppins
         poppins: ["Poppins", "sans"],
+        // add big shoulders
+        bigshoulders: ['Big Shoulders Display', 'sans-serif'],
       },
     },
   },

@@ -5,13 +5,13 @@ import logos from "./images";
 
 export default function About() {
   return (
-    <div id="about" className="flex w-full px-4 py-8 gap-4 justify-evenly">
-      <div className="w-[20%] flex justify-center items-center">
-        <div className="vertical-text bg-red-accents font-poppins font-black tracking-[-0.55em] text-[7rem] cursor-default clipped-text h-[4.75em] w-[1em] flex items-center">
+    <div id="about" className="flex w-full px-4 pt-10 pb-8 gap-4 justify-evenly">
+      <div className="w-[20%] flex justify-center items-center rotate-[270deg]">
+        <div className="flex font-bigshoulders text-[16em]">
           ABOUT
         </div>{" "}
       </div>
-      <div className="w-[50%] px-6 font-poppins text-lg">
+      <div className="w-[50%] p-6 font-poppins text-lg">
         I’m Ejay Sarangay, a junior full stack developer and a licensed
         physiotherapist. <br />
         <br />I career shifted into tech from being a fatigued allied medical
@@ -30,7 +30,7 @@ export default function About() {
         competition and deliver only the best solutions for each and every
         client.
       </div>
-      <div className="w-[30%] ">
+      <div className="w-[30%] flex flex-col justify-center">
         <div className="font-poppins uppercase font-black text-8xl leading-[0.75em] tracking-[-0.025em]">
           {" "}
           TECH STACK{" "}

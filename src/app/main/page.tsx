@@ -2,12 +2,13 @@
 import About from "./About";
 import HeroSection from "./Hero";
 import NavBar from "./NavBar";
+import Projects from "./Projects";
 
 import { useEffect } from "react";
 import { BarWipeAnimation } from "../components";
 import { uiSlice } from "../store";
 
-import { NAV_LINKS } from "../constants/const";
+import { NAV_LINKS } from "../constants/const/navLinks";
 
 export default function Main() {
   const { visitedMain, setVisitedMain } = uiSlice((state) => state);
@@ -32,6 +33,7 @@ export default function Main() {
       <div className="flex flex-col pt-14 justify-evenly z-40 gap-48">
         <HeroSection />
         <About/>
+        <Projects />
       </div>
     </div>
   );
