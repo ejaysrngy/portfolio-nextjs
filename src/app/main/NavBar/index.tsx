@@ -5,12 +5,12 @@ export default function NavBar(props: {
 }) {
   const { navLinks } = props;
 
-  const [navBg, setNavBg] = useState(true);
+  const [navBg, setNavBg] = useState(false);
 
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
 
-    if (currentScrollPos >= 100) {
+    if (currentScrollPos >= 50) {
       setNavBg(true);
     } else {
       setNavBg(false);
@@ -25,13 +25,13 @@ export default function NavBar(props: {
 
   return (
     <div
-      className={`flex justify-between sticky top-0 transition-all duration-200 ease-in-out ${
+      className={`flex justify-between fixed w-full top-0 transition-all duration-100 ease-in-out z-50 ${
         navBg ? `bg-red-accents` : "bg-transparent"
       }`}
     >
       {navLinks.map((link, index) => {
         return (
-          <a href={link.link} className="font-poppins text-5xl font-bold">
+          <a key={index} href={link.link} className="font-poppins text-5xl font-bold">
             {link.text.toUpperCase()}
           </a>
         );
