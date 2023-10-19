@@ -11,7 +11,7 @@ function Projects() {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-95%"]);
 
   return (
     <div id="projects" className="flex flex-col p-8">
@@ -22,7 +22,7 @@ function Projects() {
       <section ref={targetRef} className="relative h-[300vh]">
         {/* individual projects */}
         <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-          <motion.div style={{ x }} className="flex gap-[25em]">
+          <motion.div style={{ x }} className="flex gap-[31em]">
             {PROJECTS.map((project, index) => {
               return <ProjectCards project={project} key={index} />;
             })}

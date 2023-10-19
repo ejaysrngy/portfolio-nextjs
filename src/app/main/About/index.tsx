@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div id="about" className="flex w-full px-4 pt-10 pb-8 gap-4 justify-evenly">
       <div className="w-[20%] flex justify-center items-center rotate-[270deg]">
-        <div className="flex font-bigshoulders text-[16em]">
+        <div className="flex font-bigshoulders text-[20rem]">
           ABOUT
         </div>{" "}
       </div>
