@@ -6,8 +6,8 @@ export default function HeroSection() {
   const heroHeaderStyles = [
     "font-helvetica",
     "font-black",
-    "text-[16.5em]",
-    "2xl:text-[20em]",
+    "text-[18rem]",
+    "2xl:text-[24rem]",
     "leading-[0.75em]",
     "inline-block",
     "px-2",
@@ -19,7 +19,7 @@ export default function HeroSection() {
   return (
     <div id="home" className="relative w-full">
       <div className={heroHeaderStyles}>EJAY SARANGAY</div>
-      <div className="px-10 pt-1 flex flex-col font-poppins italic text-3xl font-light">
+      <div className="px-10 pt-1 flex flex-col font-poppins italic text-3xl 2xl:text-4xl font-light">
         <div>
           {" "}
           // junior fullstack developer{" "}

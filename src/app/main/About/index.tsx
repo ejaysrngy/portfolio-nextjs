@@ -5,13 +5,14 @@ import logos from "./images";
 
 export default function About() {
   return (
-    <div id="about" className="flex w-full px-4 pt-10 pb-8 gap-4 justify-evenly">
+    <div id="about" className="flex w-full px-4 pt-10 pb-8 gap-4 justify-evenly h-[55rem]">
       <div className="w-[20%] flex justify-center items-center rotate-[270deg]">
         <div className="flex font-bigshoulders text-[20rem]">
           ABOUT
+          {/* add scrolling text effect */}
         </div>{" "}
       </div>
-      <div className="w-[50%] p-6 font-poppins text-lg">
+      <div className="w-[50%] p-6 font-poppins text-lg flex items-center">
         I’m Ejay Sarangay, a junior full stack developer and a licensed
         physiotherapist. <br />
         <br />I career shifted into tech from being a fatigued allied medical
@@ -29,6 +30,7 @@ export default function About() {
         technologies and best practices, allowing me to stand out among the
         competition and deliver only the best solutions for each and every
         client.
+        {/* add bubble hover text */}
       </div>
       <div className="w-[30%] flex flex-col justify-center">
         <div className="font-poppins uppercase font-black text-8xl leading-[0.75em] tracking-[-0.025em]">

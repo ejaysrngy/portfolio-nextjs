@@ -1,10 +1,18 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import {Poppins} from 'next/font/google';
 
 export const metadata: Metadata = {
   title: "ESarangay",
   description: "Made with NextJS",
 };
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-poppins',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+});
 
 export default function RootLayout({
   children,
@@ -27,7 +35,7 @@ export default function RootLayout({
               <feTurbulence
                 type="fractalNoise"
                 baseFrequency="9"
-                numOctaves="3"
+                numOctaves="4"
                 stitchTiles="stitch"
               />
             </filter>
