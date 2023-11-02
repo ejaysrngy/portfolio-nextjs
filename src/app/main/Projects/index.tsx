@@ -11,10 +11,10 @@ function Projects() {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
 
   return (
-    <div id="projects" className="flex flex-col p-8">
+    <div id="projects" className="flex flex-col py-8">
       <div className="font-bigshoulders text-9xl tracking-[0.8em] w-full text-center">
         PROJECTS
       </div>
