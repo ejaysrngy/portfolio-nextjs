@@ -7,7 +7,7 @@ export default function HeroSection() {
     "font-helvetica",
     "font-black",
     "text-[18rem]",
-    "2xl:text-[24rem]",
+    "2xl:text-[22rem]",
     "leading-[0.75em]",
     "inline-block",
     "px-2",

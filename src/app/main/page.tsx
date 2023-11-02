@@ -3,6 +3,7 @@ import About from "./About";
 import HeroSection from "./Hero";
 import NavBar from "./NavBar";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 import { useEffect } from "react";
 import { BarWipeAnimation } from "../components";
@@ -34,6 +35,7 @@ export default function Main() {
         <HeroSection />
         <About/>
         <Projects />
+        <Contact />
       </div>
     </div>
   );
