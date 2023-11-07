@@ -19,7 +19,9 @@ function ProjectCards(props: ProjectCardsType) {
         style={{ backgroundImage: `url(${project.image.src})` }}
       />
       <div className="flex flex-col justify-between gap-4 w-[50em]">
-        <div className="font-bigshoulders font-black text-7xl">{project.name.toUpperCase()}</div>
+        <div className="font-bigshoulders font-black text-7xl">
+          {project.name.toUpperCase()}
+        </div>
         <div className="flex gap-4">
           {project.techStack.map((tech, index) => {
             return (

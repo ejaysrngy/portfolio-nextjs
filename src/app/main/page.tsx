@@ -33,7 +33,7 @@ export default function Main() {
       <NavBar navLinks={NAV_LINKS} />
       <div className="flex flex-col pt-24 justify-evenly z-40 gap-[27rem]">
         <HeroSection />
-        <About/>
+        <About />
         <Projects />
         <Contact />
       </div>

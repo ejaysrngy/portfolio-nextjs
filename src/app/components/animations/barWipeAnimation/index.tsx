@@ -7,7 +7,7 @@ function useAnimation(start: boolean, reverse: boolean) {
   const [scope, animate] = useAnimate();
 
   const staggerBars = stagger(0.1, { startDelay: 0.1 });
-  
+
   // fn to reverse animation if reverse props
   // is true; to remove the need to have another
   // animation hook to render transition animation

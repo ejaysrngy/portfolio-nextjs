@@ -31,7 +31,11 @@ export default function NavBar(props: {
     >
       {navLinks.map((link, index) => {
         return (
-          <a key={index} href={link.link} className="font-poppins text-5xl font-bold">
+          <a
+            key={index}
+            href={link.link}
+            className="font-poppins text-5xl font-bold"
+          >
             {link.text.toUpperCase()}
           </a>
         );

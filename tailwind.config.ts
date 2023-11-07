@@ -16,9 +16,9 @@ const config: Config = {
         // add helvetica fonts to be used
         helvetica: ["helvetica", "sans-serif"],
         // add poppins
-        poppins: ['var(--font-poppins)'],
+        poppins: ["var(--font-poppins)"],
         // add big shoulders
-        bigshoulders: ['Big Shoulders Display', 'sans-serif'],
+        bigshoulders: ["Big Shoulders Display", "sans-serif"],
       },
     },
   },

@@ -39,7 +39,7 @@ export default function Home() {
           since React rerenders the page once a state has been changed
           and runs the whole transition animation again
       */}
-      <BarWipeAnimation start={startAnimation} reverse={false}/>
+      <BarWipeAnimation start={startAnimation} reverse={false} />
       {/* this holds the grid styles */}
       <div className={gridStyles}>
         <span className={headerStyles}> Hey, </span>
